@@ -132,7 +132,7 @@ class CIFAR10(VisionDataset):
         return data_tmp, targets_tmp
 
     def NewClassSelector(self, data, targets, index):
-        data_tmp = []
+        data_tmp = [] 
         targets_tmp = []
         ind_list = [int(i) for i in index]
         ind_np = np.array(ind_list)
